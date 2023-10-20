@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div class="enrollment-container">
+    <div class="enrollment-box">
+      <marquee>
+        <h1>Welcome to Student Enrollment Portal🎓</h1>
+      </marquee>
+      <h2>Student Enrollment Form-By Sid</h2>
+      <form id="enrollment-form">
+        <div class="user-box">
+          <input type="text" name="full_name" required>
+          <label>Full Name</label>
+        </div>
+        <div class="user-box">
+          <input type="email" name="email" required>
+          <label>Email</label>
+        </div>
+        <div class="user-box">
+          <label>Gender:</label><br>
+          <select name="gender" required>
+            <option value="">Select Gender</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+        <div class="user-box">
+          <div class="center-label">Skills:</div><br>
+          <input type="checkbox" name="skills[]" value="HTML5"> <br>HTML5
+          <input type="checkbox" name="skills[]" value="CSS"> <br>CSS
+          <input type="checkbox" name="skills[]" value="JavaScript"> <br>JavaScript
+        </div>
+        <center>
+          <a href="#" class="submit-button" onclick="submitForm(event)">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            Submit
+          </a>
+        </center>
+      </form>
+    </div>
+    <div class="output-box" id="output-box">
+      <h2>Enrollment Details</h2>
+      <p id="output-fullname"></p>
+      <p id="output-email"></p>
+      <p id="output-gender"></p>
+      <p id="output-skills"></p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
